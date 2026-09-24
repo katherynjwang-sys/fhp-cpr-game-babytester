@@ -28,6 +28,7 @@ body {
 }
 
 /* White star */
+
 .container::before {
     content: "★";
 
@@ -41,11 +42,17 @@ body {
     line-height: 1;
 
     color: white;
+    opacity: 0.75;
 
     z-index: 0;
     pointer-events: none;
 }
-```
+
+/* Make sure the game is above the star */
+.container > * {
+    position: relative;
+    z-index: 1;
+}
 
 /* Game content */
 .container > * {
