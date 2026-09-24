@@ -1,55 +1,63 @@
 body {
-    font-family: Arial, sans-serif;
-    background: #f4f7fb;
+    font-family: Georgia, serif;
+    background: #b58bd4;
     text-align: center;
     margin: 0;
     padding: 40px;
 }
 
 .container {
-    max-width: 600px;
+    max-width: 650px;
     margin: auto;
     background: white;
     padding: 40px;
-    border-radius: 20px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 25px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
 }
 
 h1 {
-    margin-bottom: 10px;
+    font-size: 36px;
+    margin-bottom: 15px;
 }
 
 .instructions {
+    font-size: 18px;
     color: #555;
 }
 
 .counter {
-    font-size: 24px;
+    font-size: 25px;
     font-weight: bold;
     margin: 30px;
 }
 
 #person {
-    font-size: 120px;
     background: none;
     border: none;
     cursor: pointer;
+    padding: 0;
+}
+
+#person img {
+    width: 300px;
+    max-width: 80%;
     transition: transform 0.08s;
 }
 
-#person:active {
-    transform: scale(0.9);
+#person:active img {
+    transform: scale(0.92);
 }
 
 #reset {
     padding: 10px 20px;
+    font-family: Georgia, serif;
     font-size: 16px;
     border: none;
-    border-radius: 8px;
+    border-radius: 10px;
     cursor: pointer;
 }
 
 #message {
-    font-size: 18px;
+    font-size: 19px;
     min-height: 25px;
 }
