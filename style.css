@@ -1,8 +1,13 @@
-```css
+html, body {
+    margin: 0;
+    width: 100%;
+    min-height: 100%;
+}
+
 body {
     font-family: Georgia, serif;
     background: #b58bd4;
-    margin: 0;
+
     min-height: 100vh;
 
     display: flex;
@@ -12,10 +17,7 @@ body {
 
 .container {
     width: 700px;
-    min-height: 700px;
-
-    padding: 80px;
-    box-sizing: border-box;
+    height: 700px;
 
     display: flex;
     flex-direction: column;
@@ -25,21 +27,26 @@ body {
     position: relative;
 }
 
-/* Big cute star in the background */
+/* White star */
 .container::before {
     content: "★";
 
     position: absolute;
-    z-index: 0;
+    top: 50%;
+    left: 50%;
 
-    font-size: 850px;
-    color: white;
+    transform: translate(-50%, -50%);
+
+    font-size: 750px;
     line-height: 1;
 
+    color: white;
+
+    z-index: 0;
     pointer-events: none;
 }
 
-/* Keep all game content above the star */
+/* Game content */
 .container > * {
     position: relative;
     z-index: 1;
