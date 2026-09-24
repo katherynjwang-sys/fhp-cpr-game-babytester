@@ -35,9 +35,9 @@ body {
     top: 50%;
     left: 50%;
 
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) scaleX(1.15);
 
-    font-size: 750px;
+    font-size: 900px;
     line-height: 1;
 
     color: white;
@@ -45,6 +45,7 @@ body {
     z-index: 0;
     pointer-events: none;
 }
+```
 
 /* Game content */
 .container > * {
