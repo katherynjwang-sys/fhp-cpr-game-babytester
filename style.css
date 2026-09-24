@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f7fb;
+    text-align: center;
+    margin: 0;
+    padding: 40px;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+.instructions {
+    color: #555;
+}
+
+.counter {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 30px;
+}
+
+#person {
+    font-size: 120px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.08s;
+}
+
+#person:active {
+    transform: scale(0.9);
+}
+
+#reset {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#message {
+    font-size: 18px;
+    min-height: 25px;
+}
