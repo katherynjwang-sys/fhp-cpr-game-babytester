@@ -34,5 +34,5 @@ reset.addEventListener("click", function() {
 
     count.textContent = compressions;
 
-    message.textContent = "Start compressions!";
+    message.textContent = "start alreadyuhhh";
 });
