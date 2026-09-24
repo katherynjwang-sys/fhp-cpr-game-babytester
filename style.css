@@ -11,41 +11,50 @@ body {
 }
 
 .container {
-    width: 650px;
-    height: 650px;
+    width: 700px;
+    min-height: 700px;
 
-    background: white;
-
-    clip-path: polygon(
-        50% 2%,
-        61% 34%,
-        96% 34%,
-        68% 55%,
-        79% 91%,
-        50% 70%,
-        21% 91%,
-        32% 55%,
-        4% 34%,
-        39% 34%
-    );
-
+    padding: 80px;
     box-sizing: border-box;
-    padding: 120px;
 
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    position: relative;
+}
+
+/* Big cute star in the background */
+.container::before {
+    content: "★";
+
+    position: absolute;
+    z-index: 0;
+
+    font-size: 850px;
+    color: white;
+    line-height: 1;
+
+    pointer-events: none;
+}
+
+/* Keep all game content above the star */
+.container > * {
+    position: relative;
+    z-index: 1;
 }
 
 h1 {
     font-size: 36px;
     margin-bottom: 15px;
+    text-align: center;
 }
 
 .instructions {
     font-size: 18px;
     color: #555;
+    text-align: center;
 }
 
 .counter {
