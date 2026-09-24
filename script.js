@@ -12,19 +12,19 @@ person.addEventListener("click", function() {
     count.textContent = compressions;
 
     if (compressions === 1) {
-        message.textContent = "Good start!";
+        message.textContent = "startin off strong :P";
     }
 
     if (compressions === 10) {
-        message.textContent = "Keep going!";
+        message.textContent = "ur doing amazing sweetie!";
     }
 
     if (compressions === 30) {
-        message.textContent = "30 compressions!";
+        message.textContent = "30 compressions = one cycle!!";
     }
 
     if (compressions === 60) {
-        message.textContent = "Great job!";
+        message.textContent = "wow ur a cpr whiz!";
     }
 });
 
